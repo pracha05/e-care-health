@@ -228,13 +228,13 @@ header .navbar .dropdown-menu a {
   background-repeat: no-repeat;
   background-position: center center;
   height: calc(100vh - 117px);
-  min-height: 700px;
+  min-height:300px;
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
   color: #fff;
   height: calc(100vh - 117px);
-  min-height: 700px;
+  min-height: 300px;
 }
 
 .owl-carousel.home-slider .slider-item .slider-text h1 {
@@ -363,7 +363,7 @@ header .navbar .dropdown-menu a {
 }
 
 .home-feature {
-  margin-top: -120px;
+  /* margin-top: -120px; */
   position: relative;
   z-index: 2;
 }
@@ -545,7 +545,7 @@ header .navbar .dropdown-menu a {
 .cover_1 {
   background-size: cover;
   background-position: center center;
-  padding: 7em 0;
+  padding: 2.5em 0;
 }
 
 .cover_1 .sub-heading {
@@ -768,4 +768,232 @@ header .navbar .dropdown-menu a {
 .navbar-nav li{
 	font-size:14.5px;
 	font-weight:600;
+}
+.bg-content-banner {
+	/* background:#2196f361; */
+	padding:10px;
+	font-size:20px;
+	font-weight:600;
+}
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.font-40-respo {
+	height:40px;
+}
+@media (max-width: 767px) {
+	.sm-hide{
+		display:none;
+	}
+	.md-hide{
+		display:block;
+	}
+	.font-40-respo {
+	height:25px;
+}
+.get_quote {
+    background: #007bff;
+    border-radius: 50px 50px 0 0;
+    bottom: 5px;
+    padding: 5px 50px;
+    position: fixed;
+    left:15px !important; 
+transform: none !important; 
+    z-index: 1000;
+	font-size:10px;
+}
+.get_quote a {
+    color: #fff;
+    font-size: 13px !important;
+    font-weight: 700
+}
+}
+.footer_b_l {
+    border-bottom: 5px solid #007bff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    z-index: 1000
+}
+.get_quote {
+    background: #007bff;
+    border-radius: 50px 50px 0 0;
+    bottom: 5px;
+    padding: 5px 50px;
+    position: fixed;
+  left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1000
+}
+.get_quote a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700
+}
+
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #b9bc13 ;
+}
+.tab-content{
+  background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #b9bc13;
+    border-bottom:5px solid #b9bc13;
+    padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #b9bc13;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
 }

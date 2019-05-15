@@ -31,7 +31,8 @@
 	// home slider
 	$('.home-slider').owlCarousel({
     loop:true,
-    autoplay: true,
+    autoplay: false,
+	mouseDrag: false,
     margin:10,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
